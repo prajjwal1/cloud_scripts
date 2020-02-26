@@ -10,7 +10,7 @@ docker image build -t smth .
 
 ## Creating a container
 ```
-NV_GPU=0,1,2 nvidia-docker run -it  -v /home/prajjwal/:/workspace --publish 8000:8000 --name smth smth
+NV_GPU=0,1,2 nvidia-docker run -it  -v /home/prajjwal/:/workspace --publish 8888:8888 --name smth smth
 ```
 ### Running a jupyter notebook
 Execute this within container
