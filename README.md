@@ -3,12 +3,13 @@
 
 # Docker
 
-## Creating an image
+Some useful commands
+### Creating an image
 ```
 docker image build -t smth .
 ```
 
-## Creating a container
+### Creating a container
 ```
 NV_GPU=0,1,2 nvidia-docker run -it  -v /home/prajjwal/:/workspace --publish 8888:8888 --name smth smth
 ```
@@ -21,3 +22,8 @@ jupyter notebook --ip 0.0.0.0 --no-browser --allow-root
 ```
 ssh -L 8888:172.17.26.76:8888 prajjwal@172.17.26.76
 ```
+### Opening another session from the container
+```
+docker exec -it smth bash
+```
+where smth is the name of the container
