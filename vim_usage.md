@@ -40,3 +40,22 @@ For ex. `3iyes+ESC`
 
 ## Inserting a new line
 - Press `o` (enters into INSERT mode)
+
+## Removing a character
+- `x/X`
+
+## Replacing character
+- `r+TEXT`
+
+## Deleting words
+- `d`
+- `dw` (can be combined with different build in combinations)
+
+## Repeating command
+- `.`
+
+## Visual Mode
+- To enter `v` 
+- `e` to select the word
+- `d` (in case) to delete
+
