@@ -59,3 +59,17 @@ For ex. `3iyes+ESC`
 - `e` to select the word
 - `d` (in case) to delete
 
+# Plugins
+## Install Vundle
+
+## Using Ctags
+- Run `ctags -R .` in the root directory of the project
+- `Ctrl ]` to jump to the function definition
+- `Ctrl t` to return back
+
+## NERDTree
+- mapped to Ctrl-n to start
+- Ctrl-w to switch between windows
+
+## Code folding
+- On the function, `za` to fold and unfold contents of function 
