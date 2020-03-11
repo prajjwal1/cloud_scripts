@@ -73,3 +73,6 @@ For ex. `3iyes+ESC`
 
 ## Code folding
 - On the function, `za` to fold and unfold contents of function 
+
+## Indenting code
+- `X`>> or `X`<< where X is the number of lines
