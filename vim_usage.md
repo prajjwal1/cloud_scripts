@@ -2,24 +2,37 @@
 
 ## Basic movements
 - `h, j, k, l`
+- Can be combined with counts. `4j`, `7k`
 
 ## Word Movements
 - `b` -> beginning of a word
 - `w` -> starting of a word
+- `b` -> moves one word back
 - `e` -> end of a word
 - `x` -> delete a character
 - `.` -> repeat the last command
+- `0` to move to start of the sentence
+- `$` to move to the end of the sentence
+- `Ctrl+u` to move up one page
+- `Ctrl+d` to move down one page
+- `H` for highest line in that page
+- `M` for moddle part
+- `L` for lower part 
+- Can be combined with Number powered movement
 
-## Number powered movement
-- `3w` -> moving three words
-- `9l` 
-
-## Inserting text repeatedly
+Inserting text repeatedly
 - Press `Xi` in normal mode followed by `"text"+ESC` where `X` is the number of times you want to print the text
 For ex. `3iyes+ESC`
+- Use `.` to repeat the command
+
+## Modifiers
+- Use `ci(` to replace content inside `()`
 
 ## Finding a word
 - `f` followed by `word`
+- `F` followed by `word` (backward search)
+- `t` followed by `word` (one char back where the word is)
+- `T` followed by `word` (backward search)
 
 ## Finding matching parenthesis
 - `%`
@@ -27,10 +40,6 @@ For ex. `3iyes+ESC`
 ## Append a text
 - Press `a` where you want to extend
 - `A` appends text at the end of the line
-
-## Going to starting and ending of a line
-- `0` for going to the starting
-- `$` for the reach the end
 
 ## Find word under cursor
 - `*/#` on the word you want to find
@@ -50,15 +59,14 @@ For ex. `3iyes+ESC`
 - `gg` to go to the beginning
 ` `G` to reach the end
 - `X+G` where X is the line you want to reach
-- `0` to move to start of the sentence
-- `$` to move to the end of the sentence
 
 ## Searching text
 - `/+text` where text is the phrase you want to find
 - `n and N` for searching for other occurences
 
 ## Inserting a new line
-- Press `o` (enters into INSERT mode)
+- Press `o` (enters into INSERT mode) below where the cursor is. 
+- Use `O` for inserting line above the cursor
 
 ## Subsitution
 - :`%s/old/new/` to replace the word with new  
@@ -88,16 +96,24 @@ For ex. `3iyes+ESC`
 - `:r fname` retreives the file
 
 ## Copy and paste
+- `y` to copy the text. Can be combined with other arguments.
+- `p` pastes the text
 - Go into visual mode, select the text, `y` to yank the text, `p` to put the text wherever required
 
 ## Visual Mode
-- To enter `v` 
+- To enter `v` for word level. `V` for line level. `Ctrl+V` for visual block.
 - `e` to select the word
 - `d` (in case) to delete
 
 ## Set option
 - `:set ic`
 - `:set hls is`
+
+## Opening multiple windows
+- `:sp` splits the current window into 2. Use `qa` to close all windows.
+
+## Changing cases
+- `~` changes the casing of the selected word
 
 # Plugins
 ## Install Vundle
