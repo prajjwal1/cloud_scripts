@@ -10,6 +10,9 @@ git pull --rebase
 git submodule sync --recursive
 git submodule update --init --recursive
 
+git fetch upstream master
+git pull upstream master
+
 $ cmake -DCMAKE_PREFIX_PATH=/home/jupyter/pytorch/cmake/ .
 $ export CMAKE_PREFIX_PATH=${CONDA_PREFIX:-"$(dirname $(which conda))/../"}  # Recommended
 
