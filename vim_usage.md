@@ -118,10 +118,15 @@ For ex. `3iyes+ESC`
 # Plugins
 ## Install Vundle
 
-## Using Ctags
-- Run `ctags -R .` in the root directory of the project
-- `Ctrl ]` to jump to the function definition
-- `Ctrl t` to return back
+## Go to defintions
+- Inbuilt Vim
+  - `gd` to go to definition
+  - `Ctrl-o` to come back
+
+- Using Ctags
+  - Run `ctags -R .` in the root directory of the project
+  - `Ctrl ]` to jump to the function definition
+  - `Ctrl t` to return back
 
 ## NERDTree
 - mapped to Ctrl-n to start
